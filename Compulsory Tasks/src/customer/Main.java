@@ -29,14 +29,17 @@ public class Main {
 		System.out.println();
 
 		// creates a customer object
-		Customer newCustomer = new Customer("122", name, surname, email, phoneNo, city);
+		Customer newCustomer = new Customer(Methods.orderNumber(), name, surname, email, phoneNo, city);
 
 		String names = Customer.getfullName(newCustomer.firstName, newCustomer.lastName);
-		String orderNo = newCustomer.orderNo;
-
+		int orderNo = newCustomer.orderNo;
+		String currentDir = System.getProperty("user.dir");
+		System.out.println("Current working directory: " + currentDir);
+		
 		ArrayList<String> drivers = new ArrayList<String>();
+		
 		try {
-			File driver = new File("./../drivers.txt");
+			File driver = new File("./drivers.txt");
 			Scanner driverScan = new Scanner(driver);
 
 			while (driverScan.hasNextLine()) {

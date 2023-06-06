@@ -1,0 +1,24 @@
+INVOICE
+
+Order Number: 57
+Customer: John Baker
+Email: johnbaker@gmail.com
+Phone Number: 12345676891
+Location: Cape Town
+
+
+You have ordered the following from Romans Pizza in Cape Town: 
+
+1 x 2 Large Pizza (R78.00)
+
+Special Instructions: Extra Cheese
+
+Total: R80.00
+
+Miranda Metcalfe is nearest to the restaurant and so he will be delivering your 
+order to you at: 
+
+123 Fantasy Street
+Bergvliet
+
+If you need to contact the restaurant, their number is 0827318299

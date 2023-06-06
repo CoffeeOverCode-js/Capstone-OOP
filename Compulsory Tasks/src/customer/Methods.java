@@ -2,14 +2,15 @@ package customer;
 
 import java.io.FileNotFoundException;
 import java.util.Formatter;
+import java.util.Random;
 
 public class Methods {
 	// method that writes up a invoice to a txt file called invoice.txt
-	public static String getInvoice(String fullname, String orderNo, String Email, String phoneNo, String city,
+	public static String getInvoice(String fullname, int orderNo, String Email, String phoneNo, String city,
 			String restaurantName, String order, String specialInstructions, String location, String driver,
 			String Suburb, String Restaurantphoneno, String street) {
 		String invoice = fullname;
-		String OrderNo = orderNo;
+		int OrderNo = orderNo;
 		// if method call to phoneNoValidator is true then phone No are valid
 		// else they are not so the getInvoice method will not run
 		if (phoneNoValidator(phoneNo, Restaurantphoneno)) {
@@ -60,6 +61,12 @@ public class Methods {
 		}
 		// if both phone Numbers has no letters
 		return true;
+	}
+	
+	public static int orderNumber() {
+		Random randomNum = new Random();
+		int orderNo = randomNum.nextInt(100) + 1;
+		return orderNo;
 	}
 
 }
