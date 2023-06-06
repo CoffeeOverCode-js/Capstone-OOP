@@ -1,9 +1,9 @@
 INVOICE
 
-Order Number: 57
-Customer: John Baker
-Email: johnbaker@gmail.com
-Phone Number: 12345676891
+Order Number: 89
+Customer: Erin Naylor
+Email: erinnaylor
+Phone Number: 0728272538
 Location: Cape Town
 
 
@@ -18,7 +18,7 @@ Total: R80.00
 Miranda Metcalfe is nearest to the restaurant and so he will be delivering your 
 order to you at: 
 
-123 Fantasy Street
+72 Fantasy Street
 Bergvliet
 
-If you need to contact the restaurant, their number is 0827318299
+If you need to contact the restaurant, their number is 071410168
