@@ -33,8 +33,6 @@ public class Main {
 
 		String names = Customer.getfullName(newCustomer.firstName, newCustomer.lastName);
 		int orderNo = newCustomer.orderNo;
-		String currentDir = System.getProperty("user.dir");
-		System.out.println("Current working directory: " + currentDir);
 		
 		ArrayList<String> drivers = new ArrayList<String>();
 		
@@ -66,26 +64,26 @@ public class Main {
 		}
 		// Stores the connected information into variables
 		String restaurantName = restaurantValues[0];
-		String Order = restaurantValues[1];
-		String SpecialInstructions = restaurantValues[2];
-		String RestaurantArea = restaurantValues[3];
-		String RestaurantPhoneNo = restaurantValues[4];
-		String RestaurantStreet = restaurantValues[5];
-		String RestaurantSuburb = restaurantValues[6];
+		String order = restaurantValues[1];
+		String specialInstructions = restaurantValues[2];
+		String restaurantArea = restaurantValues[3];
+		String restaurantPhoneNo = restaurantValues[4];
+		String restaurantStreet = restaurantValues[5];
+		String restaurantSuburb = restaurantValues[6];
 
 		System.out.println();
 
-		String parts[] = new String[drivers.size()];
+		String driverInfo[] = new String[drivers.size()];
 		String deliveries[] = new String[drivers.size()];
 		String location[] = new String[drivers.size()];
 		String driversName[] = new String[drivers.size()];
 
 		// splits the drivers into parts
 		for (int i = 0; i < drivers.size(); i++) {
-			parts = drivers.get(i).split(",");
-			deliveries[i] = parts[2].trim();
-			location[i] = parts[1].trim();
-			driversName[i] = parts[0];
+			driverInfo = drivers.get(i).split(",");
+			deliveries[i] = driverInfo[2].trim();
+			location[i] = driverInfo[1].trim();
+			driversName[i] = driverInfo[0];
 		}
 
 		System.out.println();
@@ -134,8 +132,8 @@ public class Main {
 			System.out.println();
 		}
 
-		String p = Methods.getInvoice(names, orderNo, email, phoneNo, city, restaurantName, Order, SpecialInstructions,
-				RestaurantArea, driverName, RestaurantSuburb, RestaurantPhoneNo, RestaurantStreet);
+		String p = Methods.getInvoice(names, orderNo, email, phoneNo, city, restaurantName, order, specialInstructions,
+				restaurantArea, driverName, restaurantSuburb, restaurantPhoneNo, restaurantStreet);
 
 		System.out.println(p);
 
