@@ -1,14 +1,14 @@
 package customer;
 //create a customer class that initializes the values
 public class Customer {
-	protected String orderNo;
+	protected int orderNo;
 	protected String firstName;
 	protected String lastName;
 	protected String email;
 	protected String phoneNo;
 	protected String location;
 
-	public Customer(String orderNo, String firstName, String lastName, String email, String phoneNo, String location) {
+	public Customer(int orderNo, String firstName, String lastName, String email, String phoneNo, String location) {
 		this.orderNo = orderNo;
 		this.firstName = firstName;
 		this.lastName = lastName;
